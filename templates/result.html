@@ -22,7 +22,7 @@ background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100
 .container {
     max-width: 70%;
     margin: 0 auto;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,9 +40,27 @@ background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100
 }
 
 
+.app-header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.app-header p {
+    margin: 0;
+    padding: 10px;
+}
+
+
 </style>
 </head>
 <body>
+
+  <Header class="app-header">
+<p>Welcome, {{ user }}!</p><a href="/logout">Logout</a>
+  </Header>
 
    <div class="container">
 <div class="resume-box">

@@ -1,0 +1,17 @@
+{
+  "user1": {
+    "password": "123456"
+  },
+  "user2": {
+    "password": "123456"
+  },
+  "yatish12": {
+    "password": "scrypt:32768:8:1$pjJ2uQtLppz4Jfx1$8f097ced84f704a1f88caf4a8aab9efa1c57859bf3afae8ff1dde1fd09f5853246f4aec0b010c72dc6ff1bdb138b79300cd3fd2aac4ae77d03890cc90d3a88c9"
+  },
+  "shobhag": {
+    "password": "scrypt:32768:8:1$mrTvfH7lypilOKd4$996b112510482656823347907764163eeacbfa2bd0b8fb5cdcb58123d2c44f095a977bfe4686f8997d53d9079ca77750994ccb8dc8a822f48285e8fffe28ebda"
+  },
+  "shobhag1": {
+    "password": "scrypt:32768:8:1$yubgJyZswlcWYcn9$8fc2f46be465ae290250da224b4f4287368b649cfe4862ba6093397d641fda1e44e98bdc4de0e42d8ec968556ad62c7712178d12c8b38d78ad6960f1b2ae83dc"
+  }
+}

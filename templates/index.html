@@ -33,7 +33,7 @@ background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1)
 .container {
     max-width: 70%;
     margin: 0 auto;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,9 +66,27 @@ background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1)
     margin: 0;
 }
 
+
+.app-header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.app-header p {
+    margin: 0;
+    padding: 10px;
+}
+
 </style>
 </head>
 <body>
+
+  <Header class="app-header">
+<p>Welcome, {{ user }}!</p><a href="/logout">Logout</a>
+  </Header>
 
   <div class="container">
 
