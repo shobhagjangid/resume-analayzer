@@ -2,3 +2,4 @@ flask
 werkzeug
 pdfminer.six
 docx2txt
+gunicorn
