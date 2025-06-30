@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<style>
+body{
+   font-family: "Sora", sans-serif;
+   background: #191970;
+background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100%);
+}
+
+.resume-box {max-width: 800px;background: #fff;margin: 0 auto ;padding: 30px;cursor: pointer; width: 100%; }
+.resume-box ul li {
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+</style>
+</head>
+<body>
+<div class="resume-box">
+
+  <h2>Resume Analysis Result</h2>
+<p><strong>Name:</strong> {{ data.name }}</p>
+<p><strong>Email:</strong> {{ data.email }}</p>
+<p><strong>Skills:</strong> {{ data.skills }}</p>
+
+{% if recommendations %}
+  <h3>Job Recommendations:</h3>
+  <ul>
+   {% for job in recommendations %}
+  <li>
+    <strong>{{ job.title }}</strong> at {{ job.company }} – Skills: {{ job.skills }}<br>
+    <strong>Resume Match Score:</strong> {{ job.score }}%
+
+    <a href="{{ job.apply_url }}" target="_blank">
+      <button style="padding: 6px 14px; background-color: #007bff; color: white; border: none; border-radius: 5px; margin-top: 8px;">
+        Apply to Job
+      </button>
+    </a>
+    <hr>
+  </li>
+{% endfor %}
+  </ul>
+{% else %}
+  <p>No job recommendations found.</p>
+{% endif %}
+</div>
+</body>
+</html>

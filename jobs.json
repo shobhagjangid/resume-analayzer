@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Python Developer",
+    "company": "TechSoft",
+    "skills": ["python", "flask", "sql"],
+    "apply_url": "https://example.com/apply/python-developer"
+  },
+  {
+    "title": "Data Analyst",
+    "company": "DataCorp",
+    "skills": ["excel", "sql", "python"],
+    "apply_url": "https://example.com/apply/data-analyst"
+  },
+  {
+    "title": "Java Backend Developer",
+    "company": "CodeBase",
+    "skills": ["java", "spring", "sql"],
+    "apply_url": "https://example.com/apply/java-backend-developer"
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Google",
+    "skills": ["react", "js", "sql"],
+    "apply_url": "https://example.com/apply/frontend-developer"
+  },
+  {
+    "title": "FullStack Developer",
+    "company": "Infosys",
+    "skills": ["java", "spring", "sql", "js", "python", "react", "html", "css"],
+    "apply_url": "https://example.com/apply/fullstack-developer"
+  }
+]

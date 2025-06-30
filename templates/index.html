@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Analyzer By YATISH JANGID</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<style>
+body{
+   font-family: "Sora", sans-serif;
+   background: #191970;
+background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100%);
+}
+
+
+.resume-box {max-width: 800px;background: #fff;margin: 0 auto ;padding: 30px;cursor: pointer; width: 100%; text-align: center;}
+.upload-btn {
+    width: 140px;
+    height: 40px;
+   background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    font-size: 18px;
+    border: 0;
+    color: #fff;
+    font-family: 'Sora';
+    cursor: pointer;
+}
+
+
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resume-box h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.resume-box form {
+    margin-top: 20px;
+    border: 2px dashed #04043d9e;
+    padding: 30px;
+}
+
+.resume-text {
+    margin: 0 0 40px;
+    text-align: center;
+    color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+
+  <div class="resume-text">
+    <h1>
+Find Your Dream Job Smarter
+
+    </h1>
+
+  <p>Empower your job search with Resume Matcher. Upload your resume and the job description, and let Resume Matcher reveal your compatibility score and crucial keywords. Optimize smarter, tailor faster, and take control of your application process.</p>
+
+  
+
+  </div>
+
+     <div class="resume-box">
+
+  <h2>Upload Your Resume</h2>
+  <p>Supports PDF and DOCX formats</p>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" class="resume-btn" name="resume" required>
+    <button type="submit" class="upload-btn">Upload</button>
+  </form>
+
+  </div>
+</div>
+
+ 
+</body>
+</html>
