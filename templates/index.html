@@ -33,7 +33,7 @@ background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1)
 .container {
     max-width: 70%;
     margin: 0 auto;
-    height: 100vh;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,16 @@ background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1)
     margin: 0 0 40px;
     text-align: center;
     color: #fff;
+}
+
+.app-footer {
+    text-align: center;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.app-footer p {
+    margin: 0;
 }
 
 </style>
@@ -85,6 +95,11 @@ Find Your Dream Job Smarter
 
   </div>
 </div>
+
+
+<Footer class="app-footer">
+  <p>ALL Theme are reserved under &#169;  Yatish Jangid</p>
+</Footer>
 
  
 </body>

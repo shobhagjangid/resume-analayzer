@@ -19,9 +19,32 @@ background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100
     line-height: 30px;
 }
 
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.app-footer {
+    text-align: center;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.app-footer p {
+    margin: 0;
+}
+
+
 </style>
 </head>
 <body>
+
+   <div class="container">
 <div class="resume-box">
 
   <h2>Resume Analysis Result</h2>
@@ -50,5 +73,10 @@ background: linear-gradient(90deg,rgba(25, 25, 112, 1) 0%, rgba(0, 0, 51, 1) 100
   <p>No job recommendations found.</p>
 {% endif %}
 </div>
+</div>
+
+<Footer class="app-footer">
+  <p>ALL Theme are reserved under &#169;  Yatish Jangid</p>
+</Footer>
 </body>
 </html>
